@@ -79,7 +79,7 @@ class Form extends React.Component {
   }
 
   handleAmountChange(e) {
-    if (e.target.value > 0) this.setState({ itemAmount: e.target.value });
+    if (e.target.value >= 0) this.setState({ itemAmount: e.target.value });
   }
 
   handleDoneWithListSubmit(e) {
