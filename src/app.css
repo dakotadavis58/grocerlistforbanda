@@ -23,8 +23,13 @@ input[type="submit"] {
 
 .container {
   height: 750px;
-  margin-top: 8rem;
   max-height: 750px;
+  margin-top: 8rem;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    margin-top: 0;
+  }
 }
 ul {
   max-height: 500px;
