@@ -90,10 +90,15 @@ class Form extends React.Component {
 
   createListWindow() {
     let list = this.state.itemList;
-    let newWindow = window.open(
-      "",
-      "Test",
-      "width=800,height=800,scrollbars=1,resizable=1"
+    let newWindow;
+    setTimeout(
+      () =>
+        (newWindow = window.open(
+          "",
+          "Test",
+          "width=800,height=800,scrollbars=1,resizable=1"
+        )),
+      1000
     );
     let beginHtml = "<html><head></head><body>";
     let endHtml = "</body></html>";
