@@ -5,7 +5,7 @@ class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      itemAmount: 0,
+      itemAmount: "",
       itemName: "",
       itemCategory: "",
       itemList: this.initializeItemList(),
@@ -79,10 +79,8 @@ class Form extends React.Component {
   }
 
   handleAmountChange(e) {
-    if (e.target.value >= 0)
-      this.setState({ itemAmount: e.target.value || "" });
-
-    if (e.target.value === null) this.setState({ itemAmount: "" });
+    if (e.target.value < 0) this.setState({ itemAmount: 0 });
+    else this.setState({ itemAmount: e.target.value });
   }
 
   handleDoneWithListSubmit(e) {
