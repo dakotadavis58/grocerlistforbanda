@@ -2,9 +2,13 @@ import Form from "./Form";
 
 const App = () => {
   return (
-    <div className="container bg-info">
-      <h1 className="text-center">Grocery List App for Aiden and Britt</h1>
-      <Form />
+    <div className="container align-middle h-100 d-flex bg-info">
+      <div className="col">
+        <div className="row justify-content-center align-self-center">
+          <h1 className="text-center">Grocery List App for Aiden and Britt</h1>
+        </div>
+        <Form />
+      </div>
     </div>
   );
 };

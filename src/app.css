@@ -7,7 +7,7 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.4;
-  background: #fff;
+  background: rgb(255, 255, 255);
   color: #444;
 }
 
@@ -22,7 +22,16 @@ input[type="submit"] {
 }
 
 .container {
-  height: 800px;
+  height: 750px;
+  margin-top: 8rem;
+  max-height: 750px;
+}
+ul {
+  max-height: 500px;
+}
+
+li {
+  font-size: 2rem;
 }
 /* .container {
   max-width: 500px;
