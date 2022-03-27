@@ -65,7 +65,7 @@ class Form extends React.Component {
     this.setState({
       itemName: "",
       itemCategory: "",
-      itemAmount: 0,
+      itemAmount: "",
       itemList: itemList,
     });
   };
@@ -81,6 +81,8 @@ class Form extends React.Component {
   handleAmountChange(e) {
     if (e.target.value >= 0)
       this.setState({ itemAmount: e.target.value || "" });
+
+    if (e.target.value === null) this.setState({ itemAmount: "" });
   }
 
   handleDoneWithListSubmit(e) {
