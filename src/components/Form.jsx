@@ -92,9 +92,8 @@ class Form extends React.Component {
     let list = this.state.itemList;
     let newWindow;
     newWindow = window.open(
-      "",
-      "Test",
-      "width=800,height=800,scrollbars=1,resizable=1"
+      "www.grocerylistappforbanda.netlify.app/1",
+      "_blank"
     );
     let beginHtml = "<html><head></head><body>";
     let endHtml = "</body></html>";
